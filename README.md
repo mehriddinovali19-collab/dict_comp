@@ -69,3 +69,75 @@ students = {
 ---
 
 Agar xohlasangiz, har biriga **yechim kodi** bilan to'liq variantini ham tayyorlab beraman, yoki bu masalalarni **qiyinroq (senior)** darajaga ham kengaytirib bera olaman. Qaysi birini xohlaysiz?
+Mana, **10dan 20gacha** raqamlangan, barchasi **nested (ichma-ich) dictionary comprehension** uslubida, darajasi bilan:
+
+---
+
+**10.** *(O'rta-yuqori)* 1 dan 50 gacha sonlardan juft sonlarni olib, har biriga **kvadrati va kubini** ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 4 -> {"kvadrat": 16, "kub": 64}
+# natija: {2: {"kvadrat": 4, "kub": 8}, 4: {"kvadrat": 16, "kub": 64}, ...}
+```
+
+**11.** *(Yuqori)* 1 dan 30 gacha sonlardan faqat tub (prime) sonlarni olib, har biriga **o'zi, kvadrati va raqamlar yig'indisi**ni ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 13 -> {"son": 13, "kvadrat": 169, "raqam_yigindisi": 4}
+```
+
+**12.** *(Yuqori)* 1 dan 100 gacha sonlardan 4 ga bo'linadiganlarni olib, har biriga **bo'luvchilari ro'yxati va bo'luvchilar sonini** ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 8 -> {"boluvchilar": [1,2,4,8], "soni": 4}
+```
+
+**13.** *(Yuqori, murakkab)* Berilgan so'zlar ro'yxatidagi har bir so'z uchun **uzunligi va unli harflar sonini** ichma-ich dictionary qilib chiqaring.
+```python
+so_zlar = ["olma", "kitob", "daftar", "qalam"]
+# masalan: "olma" -> {"uzunlik": 4, "unlilar": 2}
+```
+
+**14.** *(Yuqori, murakkab)* 1 dan 100 gacha sonlardan 6 ga ham, 9 ga ham bo'linadiganlarni olib, har biriga **raqamlar yig'indisi va o'zi juft yoki toqligini** ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 18 -> {"raqam_yigindisi": 9, "juft_yoki_toq": "toq"}
+```
+
+**15.** *(Yuqori, murakkab)* 1 dan 50 gacha sonlardan 3 ga bo'linadiganlarni olib, har biriga **o'zi, kvadrati va sonning juft/toqligini** ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 9 -> {"kvadrat": 81, "tur": "toq"}
+```
+
+**16.** *(Eng yuqori)* Berilgan studentlar lug'atida har bir student uchun **eng yuqori va eng past bahosini** ichma-ich dictionary qilib chiqaring.
+```python
+students = {
+    "Ali": {"matematika": 80, "fizika": 90, "ingliz": 70},
+    "Vali": {"matematika": 60, "fizika": 65, "ingliz": 75}
+}
+# masalan: "Ali" -> {"max": 90, "min": 70}
+```
+
+**17.** *(Eng yuqori)* 1 dan 100 gacha sonlardan 5 ga bo'linadiganlarni olib, har biriga **bo'linish natijasi (5ga) va qoldiq (3ga bo'lganda)**ni ichma-ich dictionary qilib chiqaring.
+```python
+# masalan: 20 -> {"5ga_bolingan": 4, "3ga_qoldiq": 2}
+```
+
+**18.** *(Eng yuqori)* Berilgan so'zlar ro'yxatidagi har bir so'z uchun **birinchi va oxirgi harfini, uzunligini** ichma-ich dictionary qilib chiqaring, lekin faqat uzunligi 5dan katta bo'lganlarini.
+```python
+so_zlar = ["kompyuter", "telefon", "stol", "daftar", "kitob"]
+```
+
+**19.** *(Eng yuqori, murakkab)* 1 dan 100 gacha sonlardan tub (prime) bo'lmaganlarini olib, har biriga **bo'luvchilar yig'indisi va bo'luvchilar soni**ni ichma-ich dictionary qilib chiqaring (faqat 10dan 30gacha sonlar uchun).
+```python
+# masalan: 12 -> {"boluvchilar_yigindisi": 28, "soni": 6}
+```
+
+**20.** *(Eng yuqori, murakkab)* Ichma-ich dictionary berilgan — har bir studentning bir nechta fani bor. Har bir student uchun **o'rtacha baho, eng yuqori fan nomi va eng past fan nomi**ni ichma-ich dictionary qilib chiqaring.
+```python
+students = {
+    "Ali": {"matematika": 80, "fizika": 90, "ingliz": 70},
+    "Vali": {"matematika": 60, "fizika": 65, "ingliz": 75},
+    "Hasan": {"matematika": 95, "fizika": 85, "ingliz": 100}
+}
+```
+
+---
+
+Yechimlarini xohlasangiz, ayting — barchasini kod bilan yechib beraman! 😊
